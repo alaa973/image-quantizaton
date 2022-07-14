@@ -1,6 +1,6 @@
 # image-quantizaton
 The idea of color quantization is to reduce the number of colors in an image to a smaller set of representative colors called color palette. Reduction should be  performed so that the quantized image differs as little as possible from the original image
-##Finding distinct colors:
+## Finding distinct colors:
 We iterate over the image and check if the color of each pixel was seen before if not, we store it in an array called dis_color
 Note: we check if the color was seen before through a boolean 3d array of size 256*256*256 to enable us to try all combinations of colors, for example: exist[0][0][255] = 1 means that the color 0,0,225 was seen before and is already stored in the dis_color array 
 ## Minimum spanning tree: 
@@ -31,5 +31,6 @@ Find parent: When we call find parent for a node, we traverse up the tree until 
 Union: We join the smaller rank tree to the higher rank tree(if both have equal rank, we join any one of them to the other) 
 We stop the algorithm when we reach the desired number of clusters
 Finally, we iterate over all the nodes, and find parent of each one of them, so that each node has the root of its cluster as its parent
+
 ![out](https://user-images.githubusercontent.com/71910329/179064740-3d0b9587-30fb-4188-b578-6b86c8e379cd.JPG)
 

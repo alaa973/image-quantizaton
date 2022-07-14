@@ -35,3 +35,4 @@ Find parent: When we call find parent for a node, we traverse up the tree until 
 Union: We join the smaller rank tree to the higher rank tree(if both have equal rank, we join any one of them to the other) 
 We stop the algorithm when we reach the desired number of clusters
 Finally, we iterate over all the nodes, and find parent of each one of them, so that each node has the root of its cluster as its parent
+
